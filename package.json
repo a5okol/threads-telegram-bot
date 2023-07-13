@@ -27,7 +27,8 @@
     "node-fetch": "^2.6.9",
     "node-telegram-bot-api": "^0.61.0",
     "nodemon": "^2.0.20",
-    "request-promise": "^4.2.2"
+    "request-promise": "^4.2.2",
+    "threads-api": "^1.4.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

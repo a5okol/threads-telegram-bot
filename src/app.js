@@ -5,6 +5,7 @@ require("dotenv").config();
 const express = require("express");
 
 const bot = require("./services/telegramBotService");
+const threadsAPI = require("./services/threadsService");
 
 const app = express();
 const telegramGroupId = process.env.TELEGRAM_GROUP_ID;
@@ -31,7 +32,7 @@ bot.on("message", async (msg) => {
   }
 });
 
-bot.on("callback_query", async () => {});
+bot.on("callback_query", async (callbackQuery) => {});
 
 app.listen(process.env.PORT, () => {
   console.log("Express server is live");
